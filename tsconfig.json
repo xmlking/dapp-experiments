@@ -16,6 +16,24 @@
     ],
     "baseUrl": ".",
     "paths": {
+      "@env/*": [
+        "apps/dapp/src/environments/*"
+      ],
+      "@xmlking/home": [
+        "libs/home/src/index.ts"
+      ],
+      "@xmlking/not-found": [
+        "libs/not-found/src/index.ts"
+      ],
+      "@xmlking/dashboard": [
+        "libs/dashboard/src/index.ts"
+      ],
+      "@xmlking/models": [
+        "libs/models/src/index.ts"
+      ],
+      "@xmlking/clap": [
+        "libs/clap/src/index.ts"
+      ]
     }
   },
   "exclude": [

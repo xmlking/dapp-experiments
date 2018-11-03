@@ -1,0 +1,29 @@
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+
+import { AppComponent } from './app.component';
+import { RouterModule } from '@angular/router';
+
+@NgModule({
+  declarations: [AppComponent],
+  imports: [
+    BrowserModule,
+    RouterModule.forRoot(
+      [
+        { path: 'home', loadChildren: '@xmlking/home#HomeModule' },
+        {
+          path: 'not-found',
+          loadChildren: '@xmlking/not-found#NotFoundModule'
+        },
+        {
+          path: 'dashboard',
+          loadChildren: '@xmlking/dashboard#DashboardModule'
+        }
+      ],
+      { initialNavigation: 'enabled' }
+    )
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule {}

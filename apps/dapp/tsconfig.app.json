@@ -1,0 +1,20 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../dist/out-tsc/apps/dapp",
+    "types": []
+  },
+  "exclude": [
+    "src/test-setup.ts",
+    "**/*.spec.ts"
+  ],
+  "include": [
+    "**/*.ts"
+  
+    , "../../libs/home/src/index.ts"
+
+    , "../../libs/not-found/src/index.ts"
+
+    , "../../libs/dashboard/src/index.ts"
+]
+}

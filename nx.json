@@ -7,5 +7,46 @@
     "tslint.json": "*",
     "nx.json": "*"
   },
-  "projects": {}
+  "projects": {
+    "dapp": {
+      "tags": [
+        "app-module"
+      ]
+    },
+    "dapp-e2e": {
+      "tags": []
+    },
+    "api": {
+      "tags": [
+        "api-module"
+      ]
+    },
+    "home": {
+      "tags": [
+        "layout",
+        "entry-module"
+      ]
+    },
+    "not-found": {
+      "tags": [
+        "entry-module"
+      ]
+    },
+    "dashboard": {
+      "tags": [
+        "layout",
+        "entry-module"
+      ]
+    },
+    "models": {
+      "tags": [
+        "utils"
+      ]
+    },
+    "clap": {
+      "tags": [
+        "public-module"
+      ]
+    }
+  }
 }

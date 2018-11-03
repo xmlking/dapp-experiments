@@ -1,0 +1,15 @@
+version: '2'
+services:
+  node:
+    build: .deploy/quorum
+    image: quorum-node
+    network_mode: "host"
+    volumes:
+      - './.deploy/quorum/qdata:/qdata'
+    ports:
+      - 50401:50401
+      - 22000:22000
+      - 21000:21000
+      - 9000:9000
+    command: "sh /qdata/start-node.sh" 
+
