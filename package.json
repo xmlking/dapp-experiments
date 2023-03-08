@@ -43,7 +43,7 @@
     "@angular/router": "^7.0.0",
     "@grpc/proto-loader": "^0.3.0",
     "@nestjs/common": "^5.4.0",
-    "@nestjs/core": "^5.4.0",
+    "@nestjs/core": "^9.0.5",
     "@nestjs/microservices": "^5.4.0",
     "@nestjs/swagger": "^2.5.1",
     "@nestjs/websockets": "^5.4.0",
